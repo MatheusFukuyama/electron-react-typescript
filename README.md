@@ -1,6 +1,6 @@
 # electron-react-typescript
 
-![](./aplicacao.png)
+ Solução do desafio proposto utilizando electron, react e typescript.
 
 ## Intalação
 
@@ -15,7 +15,7 @@ Instale o banco de dados Mongodb
 yarn add mongodb    
 ```
 
-## Esxecução
+## Execução
 
 Para a execução do programa basta executar o comando.
 
