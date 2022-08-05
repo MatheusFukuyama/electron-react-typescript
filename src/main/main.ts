@@ -35,15 +35,10 @@ ipcMain.on("nova-tarefa", async (e, args) => {
  
   const tarefas = await Tarefa.find()
   e.reply("listar-tarefa", JSON.stringify(tarefas))
-  
-
 })
 
 ipcMain.on("alterar-tarefa", async (e, args) => {
-
   const tarefaEditada = await Tarefa.findOneAndUpdate({ _id: args._id}, args)
-  // console.log(tarefaEditada)
-  console.log(args)
 
   const tarefas = await Tarefa.find()
   e.reply("listar-tarefa", JSON.stringify(tarefas))
@@ -51,20 +46,14 @@ ipcMain.on("alterar-tarefa", async (e, args) => {
 
 
 ipcMain.on("deletar-tarefa", async (e, args) => {
-
   const tarefaRemovida = await Tarefa.deleteOne({ _id: args._id})
-  console.log(tarefaRemovida)
-
   const tarefas = await Tarefa.find()
   e.reply("listar-tarefa", JSON.stringify(tarefas))
 })
 
 ipcMain.on("listar-tarefa", async (e, args) => {
   const tarefas = await Tarefa.find()
-  // console.log(tarefas)
   e.reply("listar-tarefa", JSON.stringify(tarefas))
-  
-
 })
 
 app.whenReady().then(run)

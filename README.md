@@ -1,33 +1,26 @@
 # electron-react-typescript
-Clone this repo to start a simple Electron app with React and Typescript.
 
-## Installation
+![](./aplicacao.png)
 
-Use yarn to install all dependencies.
+## Intalação
+
+Utilize o yarn para instalar as dependências
 
 ```bash
 yarn
 ```
-Use Mongodb to create database dependencies.
+Instale o banco de dados Mongodb 
 
 ```bash
-yarn add mongodb
+yarn add mongodb    
 ```
 
-## Usage
+## Esxecução
 
-Run the `dev` script to start the project. It will reload with code changes.
+Para a execução do programa basta executar o comando.
 
 ```bash
 yarn dev
-```
-
-## Building
-
-Run the `build` script in order to generate the production build to the current OS: 
-
-```bash
-yarn build
 ```
 
 ## License
