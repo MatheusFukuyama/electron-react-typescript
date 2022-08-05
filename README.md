@@ -8,6 +8,11 @@ Use yarn to install all dependencies.
 ```bash
 yarn
 ```
+Use Mongodb to create database dependencies.
+
+```bash
+yarn add mongodb
+```
 
 ## Usage
 
